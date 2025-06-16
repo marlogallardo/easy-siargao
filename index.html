@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Easy Siargao</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <h1>Easy Siargao</h1>
+    <p>Stress-free logistics and transport in paradise</p>
+    <a href="#booking" class="cta">Book Now</a>
+  </header>
+
+  <section class="services">
+    <h2>Services</h2>
+    <ul>
+      <li>🏝 Van and motorbike transport</li>
+      <li>📦 Package & surfboard delivery</li>
+      <li>✈️ Airport pickup/drop-off</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/fb_photo_1.jpg" onclick="openLightbox(this.src)" />
+      <img src="images/fb_photo_2.jpg" onclick="openLightbox(this.src)" />
+      <img src="images/fb_photo_3.jpg" onclick="openLightbox(this.src)" />
+      <img src="images/fb_photo_4.jpg" onclick="openLightbox(this.src)" />
+    </div>
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Booking Form</h2>
+    <form action="https://formspree.io/f/xnqedkav" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="phone" placeholder="Phone Number" />
+      <textarea name="details" placeholder="Pickup & delivery details" required></textarea>
+      <button type="submit">Send Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>📧 easysiargao@gmail.com | 📞 <a href="tel:+639695980495">+63 969 598 0495</a></p>
+    <p><a href="https://facebook.com/easysiargao" target="_blank">Facebook</a> | <a href="https://wa.me/639695980495" target="_blank">WhatsApp</a></p>
+    <p>© 2025 Easy Siargao</p>
+  </footer>
+
+  <div id="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" src="" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
