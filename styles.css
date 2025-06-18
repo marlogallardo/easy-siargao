@@ -58,7 +58,7 @@ img {
 
 /* Optional: limit width for nicer layout */
 .image-gallery img {
-  max-width: 400px;
+  max-width: 300px;
 }
 .center-text {
   text-align: center;
@@ -66,7 +66,7 @@ img {
   font-size: 1.6rem;
 }
 .fullscreen-center {
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -111,6 +111,49 @@ section h2 {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
+}
+.booking {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fefefe;
+}
+
+.booking h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.booking form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking input,
+.booking textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.booking button {
+  padding: 12px;
+  font-size: 1rem;
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking button:hover {
+  background-color: #ff6a00;
 }
 .section-title {
   font-size: 2rem;
